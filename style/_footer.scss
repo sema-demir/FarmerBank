@@ -1,0 +1,23 @@
+@import 'colors';
+
+@import 'constants';
+
+footer{
+    background-color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    & address a{
+        text-decoration: none;
+        color: $dark;
+        @include tablet{
+            font-size: 15px;
+
+        }
+        &:hover{
+            text-decoration: underline;
+            transition: .3s;
+        }
+    }
+}
